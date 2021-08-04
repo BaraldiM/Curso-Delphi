@@ -13,9 +13,7 @@ type
     btn_abreavisos: TSpeedButton;
     txt_textoaviso: TEdit;
     Button2: TButton;
-    Button1: TButton;
     procedure btn_abreavisosClick(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,11 +34,6 @@ begin
   txt_textoaviso.Text := 'Curso Delphi Basico';
 
 
-end;
-
-procedure TForm1.Button1Click(Sender: TObject);
-begin
-txt_textoaviso.Text := '';
 end;
 
 end.
