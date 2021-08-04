@@ -48,6 +48,7 @@ object Form1: TForm1
     Width = 401
     Height = 21
     TabOrder = 1
+    Text = 'txt_textoaviso'
   end
   object Button2: TButton
     Left = 8
