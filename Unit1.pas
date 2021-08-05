@@ -8,16 +8,21 @@ uses
 
 type
   TForm1 = class(TForm)
-    lb_helloword: TLabel;
     btn_testebutton: TButton;
     btn_abreavisos: TSpeedButton;
     txt_textoaviso: TEdit;
     Button2: TButton;
     Button1: TButton;
+    txt_n1: TEdit;
+    txt_n2: TEdit;
+    txt_n3: TEdit;
+    btn_somar: TSpeedButton;
     procedure btn_abreavisosClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure btn_somarClick(Sender: TObject);
   private
     { Private declarations }
+
 
   public
     { Public declarations }
@@ -32,11 +37,40 @@ implementation
 
 
 procedure TForm1.btn_abreavisosClick(Sender: TObject);
-  var aviso:string
+  var
+  aviso,aviso2:string;
+
 
 begin
   aviso := 'Este texto é da variável';
-  txt_textoaviso.Text := 'Curso Delphi Basico';
+  aviso2 := ' Curso em Delphi';
+
+  txt_textoaviso.Text := aviso + aviso2;
+  // contacatenaçao da variável aviso e aviso2
+
+
+
+
+
+end;
+
+procedure TForm1.btn_somarClick(Sender: TObject);
+var
+n1,n2,n3 : Double;
+
+begin
+// somar n1,n2
+
+  n1 := StrToFloat (txt_n1.Text);
+  n2 := StrToFloat (txt_n2.Text);
+  n3 := n1 + n2;
+
+  txt_n3.Text := FloatToStr (n3);
+
+
+
+
+
 
 
 end;

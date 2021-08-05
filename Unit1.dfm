@@ -13,19 +13,6 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object lb_helloword: TLabel
-    Left = 128
-    Top = 8
-    Width = 313
-    Height = 77
-    Caption = 'Hello Word'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWhite
-    Font.Height = -64
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object btn_abreavisos: TSpeedButton
     Left = 151
     Top = 193
@@ -33,6 +20,14 @@ object Form1: TForm1
     Height = 25
     Caption = 'Mostrar Avisos'
     OnClick = btn_abreavisosClick
+  end
+  object btn_somar: TSpeedButton
+    Left = 296
+    Top = 272
+    Width = 51
+    Height = 33
+    Caption = 'Somar'
+    OnClick = btn_somarClick
   end
   object btn_testebutton: TButton
     Left = 56
@@ -43,7 +38,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object txt_textoaviso: TEdit
-    Left = 56
+    Left = 25
     Top = 224
     Width = 401
     Height = 21
@@ -58,12 +53,33 @@ object Form1: TForm1
     TabOrder = 2
   end
   object Button1: TButton
-    Left = 382
-    Top = 251
+    Left = 320
+    Top = 193
     Width = 75
     Height = 25
     Caption = 'Limpar'
     TabOrder = 3
     OnClick = Button1Click
+  end
+  object txt_n1: TEdit
+    Left = 25
+    Top = 272
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object txt_n2: TEdit
+    Left = 169
+    Top = 272
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object txt_n3: TEdit
+    Left = 353
+    Top = 272
+    Width = 121
+    Height = 21
+    TabOrder = 6
   end
 end
