@@ -18,6 +18,7 @@ type
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
+
   public
     { Public declarations }
   end;
@@ -31,8 +32,10 @@ implementation
 
 
 procedure TForm1.btn_abreavisosClick(Sender: TObject);
-begin
+  var aviso:string
 
+begin
+  aviso := 'Este texto é da variável';
   txt_textoaviso.Text := 'Curso Delphi Basico';
 
 
